@@ -11,6 +11,10 @@ Class UsersController
     function create()
     {
         $user = new Users();
-        $user->setLogin("defab");
+        $user->setNom("Defabritiis");
+        $user->setPrenom("Tom");
+        $user->setDiscord("BeeGrubz#8455");
+
+        return $this->render('create/create.html.twig', ["nom"=> $user->getNom(), "prenom"=>$user->getPrenom()]);
     }
 }
