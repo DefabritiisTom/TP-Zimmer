@@ -17,6 +17,14 @@ class HelloController extends Controller
 {
     function index()
     {
+        /**
+         * @Route ("/annotation", name="hello-world")
+         */
         return $this->render('Hello/Hello.html.twig');
+    }
+
+    function index2()
+    {
+        return new Response("hello_World");
     }
 }

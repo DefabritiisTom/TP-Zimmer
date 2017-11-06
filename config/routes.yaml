@@ -2,6 +2,9 @@ index:
     path: /
     defaults: { _controller: 'App\Controller\HelloController::index' }
 
+index2:
+   path: /
+   defaults: {_controller: 'App\Controller\HelloController::index2'}
 # first, run composer req annotations
 controllers:
     resource: ../src/Controller/
